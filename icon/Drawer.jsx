@@ -1,19 +1,19 @@
 import React from "react";
 // c996e4
 const Drawer = () => {
-    const svgStyle = {
-        fill: "#c996e4",
-         color: "#c996e4",
-         height:"100%",
-         width:"100%",
-    }
+  const svgStyle = {
+    fill: "#9d34da",
+    color: "#9d34da",
+    height: "100%",
+    width: "100%",
+  };
   return (
     <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 64 64"
         width="1em"
-        class=""
+        className=""
         style={svgStyle}
       >
         <defs fill="currentColor"></defs>

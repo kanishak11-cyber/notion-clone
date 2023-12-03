@@ -1,22 +1,18 @@
 import React from "react";
 
 const OpenBook = () => {
-    const svgStyle = {
-        width: '22px',
-        height: '22px',
-        display: 'block',
-        fill: '#ea4e43',
-        flexShrink: 0,
-        marginBottom: '1px',
-        color: '#ea4e43',
-      };
+  const svgStyle = {
+    width: "22px",
+    height: "22px",
+    display: "block",
+    fill: "#ea4e43",
+    flexShrink: 0,
+    marginBottom: "1px",
+    color: "#ea4e43",
+  };
   return (
     <div>
-      <svg
-        class="bookOpen"
-        viewBox="0 0 48 48"
-        style={svgStyle}
-      >
+      <svg className="bookOpen" viewBox="0 0 48 48" style={svgStyle}>
         <path
           d="M21 40.86H6.09c-1.08 0-1.98-.9-1.98-1.98V20.22c0-1.17.6-1.83 1.74-1.83h.9v-3.36H4.89c-2.49 0-4.5 2.01-4.5 4.5v20.25c0 2.49 2.01 4.5 4.5 4.5H21v-3.42ZM43.14 15h-1.86v3.36h.99c1.08 0 1.62.63 1.62 1.62v18.93c0 1.08-.87 1.98-1.98 1.98H27v3.36h16.14c2.49 0 4.5-2.01 4.5-4.5V19.5c0-2.49-2.01-4.5-4.5-4.5Z"
           fill="currentColor"

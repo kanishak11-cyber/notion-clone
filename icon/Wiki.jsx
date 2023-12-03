@@ -4,7 +4,7 @@ const Wiki = () => {
   return (
     <>
       <svg
-        class="wikisLogo"
+        className="wikisLogo"
         viewBox="0 0 73 25"
         // style="width:73px;height:25px;display:block;fill:inherit;flex-shrink:0"
       >

@@ -1,19 +1,19 @@
 import React from "react";
 
 const Home = () => {
-    const svgStyle = {
-        fill: "#ea4e43",
-         color: "#ea4e43",
-         height:"100%",
-          width:"100%",
-    };
+  const svgStyle = {
+    fill: "#ea4e43",
+    color: "#ea4e43",
+    height: "100%",
+    width: "100%",
+  };
   return (
     <>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 64 64"
         width="1em"
-        class=""
+        className=""
         style={svgStyle}
       >
         <defs fill="currentColor"></defs>

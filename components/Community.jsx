@@ -1,10 +1,11 @@
-"use client"
+"use client";
 import RightArrow from "@/icon/RightArrow";
-import { Button } from "@radix-ui/themes";
+import { Avatar, Box, Button, Card, Flex, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import React from "react";
-import { Carousel } from 'flowbite-react';
+import { Carousel } from "flowbite-react";
 import CarouselComponent from "./CarouselComponent";
+import About from "./About";
 const Community = () => {
   return (
     <div className="text-center flex justify-center flex-col items-center mx-auto w-3/4 py-20">
@@ -87,14 +88,92 @@ const Community = () => {
       </div>
 
       {/* testimonial */}
-      <div>
-        <div>
-            <CarouselComponent />
+      <div className="flex w-[75%] gap-10 py-10  ">
+        <div className="bg-[#f6f5f4] w-[65%] rounded-3xl">
+          <CarouselComponent />
         </div>
-        <div>
+        <div className="w-[35%] flex md:flex-col flex-row gap-4 ">
+          <div className=" bg-[#f6f5f4] flex flex-col rounded-2xl p-1 items-center">
+            <div className="flex flex-row gap-4 p-2">
+              <div className="h-10 w-10 rounded-full items-center">
+                <Image
+                  src={
+                    "https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/home/avatars/twitter-avatar-deborah.png"
+                  }
+                  alt=""
+                  width={1000}
+                  height={1000}
+                />
+              </div>
+              <div>
+                <h1 className="text-md font-semibold">Deborah Mecca</h1>
+                <p className="text-sm  ">@DebMecca</p>
+              </div>
+            </div>
+            <div>
+              <p className="justify-normal text-sm p-2 text-justify">
+                I used to HATE documenting things. And then I started using{" "}
+                <span className="text-blue-400">@NotionHQ</span> and I document
+                a lot. A LOT A LOT. Now I just realize that it wasn't that I
+                hated documenting, I just hated Google Docs.
+              </p>
+            </div>
+          </div>
 
+          <div className=" bg-[#f6f5f4] flex flex-col rounded-2xl p-1 items-center">
+            <div className="flex flex-row gap-4 p-2">
+              <div className="h-10 w-10 rounded-full items-center">
+                <Image
+                  src={
+                    "https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/home/avatars/twitter-avatar-oliver.png"
+                  }
+                  alt=""
+                  width={1000}
+                  height={1000}
+                />
+              </div>
+              <div>
+                <h1 className="text-md font-semibold">Oliver Peyre</h1>
+                <p className="text-sm  ">@opeyre</p>
+              </div>
+            </div>
+            <div>
+              <p className="justify-normal text-sm p-2 text-justify">
+                <span className="text-blue-400">@NotionHQ</span> Truly impressed
+                by the velocity and quality of your work. Making using Notion
+                even more fun week after week!
+              </p>
+            </div>
+          </div>
+
+          <div className=" bg-[#f6f5f4] flex flex-col rounded-2xl p-1 items-center">
+            <div className="flex flex-row gap-4 p-2">
+              <div className="h-10 w-10 rounded-full items-center">
+                <Image
+                  src={
+                    "https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/home/avatars/twitter-avatar-andre.png"
+                  }
+                  alt=""
+                  width={1000}
+                  height={1000}
+                />
+              </div>
+              <div>
+                <h1 className="text-md font-semibold">André Blackman</h1>
+                <p className="text-sm  ">@mindofandre</p>
+              </div>
+            </div>
+            <div>
+              <p className="justify-normal text-sm p-2 text-justify">
+                One of the most incredible things about{" "}
+                <span className="text-blue-400">@NotionHQ</span> the dynamic
+                community being built - creating and sharing at its best..
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+      <About />
     </div>
   );
 };

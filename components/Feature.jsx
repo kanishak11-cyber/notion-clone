@@ -35,18 +35,18 @@ const items = [
     img: list,
   },
 ];
-
 const Features = () => {
   const [active, setActive] = useState(items[0]);
+
   return (
     <div className="flex flex-col items-center">
-      <Image
+      <img
         key={gallery}
         src={active.img}
         alt={active.title}
-        className="rounded-lg border-2 border-gray-300 max-w-[60vw]"
+        className="rounded-lg border-2 border-gray-300 max-w-[60vw] my-5"
       />
-      <div className="flex gap-2 mt-5">
+      <div className="flex gap-2">
         {items.map((item) => {
           return (
             <div
@@ -54,10 +54,7 @@ const Features = () => {
               onClick={() => {
                 setActive(item);
               }}
-              className="border rounded-md px-2 text-sm border-gray-400 cursor-pointer hover:bg-gray-400/80 transition-all"
-              style={{
-                backgroundColor: active.title === item.title ? "#e8e7e6" : "",
-              }}
+              className={`border rounded-md px-2 text-sm border-gray-400 cursor-pointer hover:bg-gray-400/80 transition-all ${active.title === item.title ? 'bg-gray-700 text-white' : ''}`}
             >
               {item.title}
             </div>
